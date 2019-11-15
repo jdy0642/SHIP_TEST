@@ -40,8 +40,9 @@ test = (()=>{
 		         $.getJSON(_+'/tx/cgvcrawling',d=>{
 		        	 $.each(d.list,(i,j)=>{
 		        		 $('#testarea').append(j)
-		        		 alert(i)
 		        		 listcount = i
+		        		 alert(listcount)
+		        		 
 		        	 })
 		         	})
 		         	alert('i = '+listcount)

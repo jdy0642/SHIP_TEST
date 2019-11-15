@@ -28,7 +28,7 @@ public class CrawlingProxy extends Proxy {
 	    	  	Elements artist = rawData.select("a strong[class=\"title\"]");
 	    	  	Elements num = rawData.select("div strong[class=\"rank\"]");
 	    	  	for(int i=0; i < num.size(); i++) {
-	    	  		box.add(String.format("%s위 : %s\n",num.get(i).text().replace("No.",""),artist.get(i).text()));
+	    	  		box.add(String.format("%s위 : %s",num.get(i).text().replace("No.",""),artist.get(i).text()));
 	    	  	}
 	    	  	/*for(Element e : artist) {
 	    	  		box.add(e.text()+"\n");
