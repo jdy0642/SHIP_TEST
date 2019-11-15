@@ -39,4 +39,5 @@ public class PageProxy extends Proxy {
 		      nextBlock = startPage + BLOCK_SIZE;
 		      prevBlock = startPage - BLOCK_SIZE;
 		   }
-}
+}//변경
+
