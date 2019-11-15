@@ -1,9 +1,13 @@
 package com.ship.web.pxy;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 import java.io.File;
 =======
 >>>>>>> ljs
+=======
+import java.io.File;
+>>>>>>> hsc
 import java.util.ArrayList;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Component;

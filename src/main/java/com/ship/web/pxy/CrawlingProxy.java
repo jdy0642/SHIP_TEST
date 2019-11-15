@@ -1,10 +1,15 @@
 package com.ship.web.pxy;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 import java.util.ArrayList;
 import java.util.List;
 =======
 >>>>>>> ljs
+=======
+import java.util.ArrayList;
+import java.util.List;
+>>>>>>> hsc
 import java.util.Map;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
@@ -13,6 +18,7 @@ import org.jsoup.select.Elements;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 import com.ship.web.enums.Path;
 import com.ship.web.utl.Printer;
@@ -38,12 +44,36 @@ public class CrawlingProxy extends Proxy {
 	    	  		box.add(e.text()+"\n");
 	    	  	}*/
 	    	  	p.accept(""+box);
+=======
+import com.ship.web.enums.Path;
+@Component("crawler")
+public class CrawlingProxy extends Proxy {
+	@Autowired Box<String> box;
+	
+	  public Box<String> engChoose(Map<?,?> paramMap){
+		 
+//		  System.out.println("박스 choose"+box);
+	      return engCrawling("https://endic.naver.com/?sLn=kr");
+	   }
+	private Box<String> engCrawling(String url) {
+		box.clear();
+	      try {
+	    	  Document rawData = Jsoup.connect(url).timeout(10*1000).get();
+	    	  	Elements artist = rawData.select("a[class=\"link\"] strong");
+	    	  	Elements artist1 = rawData.select("a[class=\"link\"]");
+	    	  	for(Element e : artist1) {
+	    	  		box.add(e.text()+"\n");
+	    	  		
+	    	  	}
+	    	  	System.out.println("box에 담긴: "+box);
+>>>>>>> hsc
 	      } catch (Exception e) {
 	         e.printStackTrace();
 	      }
 	      return box;
 	}
 }
+<<<<<<< HEAD
 =======
 
 @Component("crawler")
@@ -72,3 +102,5 @@ public class CrawlingProxy extends Proxy {
    }
 }
 >>>>>>> ljs
+=======
+>>>>>>> hsc

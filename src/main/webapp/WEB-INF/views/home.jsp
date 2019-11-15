@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"   pageEncoding="UTF-8"%>    
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <!doctype html>
 <html lang="en">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -57,3 +58,9 @@
 </script> 
 </html>
 >>>>>>> yyh
+=======
+<!doctype html>
+<html lang="en">
+
+</html>
+>>>>>>> hsc

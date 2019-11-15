@@ -1,5 +1,6 @@
 package com.ship.web.tx;
 <<<<<<< HEAD
+<<<<<<< HEAD
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
@@ -19,6 +20,8 @@ import com.ship.web.pxy.Box;
 import com.ship.web.pxy.CrawlingProxy;
 import com.ship.web.utl.Printer;
 =======
+=======
+>>>>>>> hsc
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Transactional;
@@ -29,12 +32,16 @@ import com.ship.web.pxy.Box;
 import com.ship.web.pxy.CrawlingProxy;
 import com.ship.web.pxy.PageProxy;
 import com.ship.web.pxy.Trunk;
+<<<<<<< HEAD
 >>>>>>> ljs
+=======
+>>>>>>> hsc
 
 @RestController
 @Transactional
 @RequestMapping("/tx")
 public class TxController {
+<<<<<<< HEAD
 <<<<<<< HEAD
 	//@Autowired HashMap<String, String> map;
 	@Autowired Printer p;
@@ -64,3 +71,31 @@ public class TxController {
    }
 }
 >>>>>>> ljs
+=======
+	@Autowired Trunk<String> trunk;
+	@Autowired Box<String> box;
+	@Autowired CrawlingProxy crawler;
+	@Autowired TxService txService; 
+	@Autowired PageProxy pager;
+	
+	@GetMapping("/engcrawling")
+	public Box<String> bringEng(){
+		System.out.println("컨트롤러 들어옴: >>>>>");
+		box = txService.engCrawling(trunk.get());
+		return box;
+	}
+
+}
+//	@GetMapping("/page/{pageno}/size/{pageSize}")
+//	public Map<?,?>  list(@PathVariable String pageno,
+//			@PathVariable String pageSize){
+//		System.out.println("넘어온 페이지 넘버: "+pageno);
+//		pager.setPageNum(pager.integer(pageno));
+//		pager.setPageSize(pager.integer(pageSize));
+//		pager.paging();
+//		box.clear();
+//		return trunk.get();
+//	}
+
+
+>>>>>>> hsc

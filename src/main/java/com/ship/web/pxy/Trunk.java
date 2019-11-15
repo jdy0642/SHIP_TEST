@@ -5,6 +5,11 @@ import java.util.function.Function;
 
 import org.springframework.stereotype.Component;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> hsc
 @Component
 public class Trunk<T>{
 	private HashMap<String, T> map;
@@ -22,6 +27,7 @@ public class Trunk<T>{
 	public HashMap<String, T> get() {return map;}
 	public int size() {return map.size();}
 }
+<<<<<<< HEAD
 =======
 
 @Component
@@ -42,3 +48,5 @@ public class Trunk<T>{
     public int size() {return map.size();}
 }
 >>>>>>> ljs
+=======
+>>>>>>> hsc
