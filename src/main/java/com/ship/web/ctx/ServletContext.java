@@ -1,5 +1,4 @@
 package com.ship.web.ctx;
-import javax.servlet.MultipartConfigElement;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
