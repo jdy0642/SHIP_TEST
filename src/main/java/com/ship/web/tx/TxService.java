@@ -12,7 +12,7 @@ public class TxService {
 	@Autowired CrawlingProxy crawler;
 	@Autowired ArticleProxy art;
 	@Autowired Box<String> box;
-	
+	//dd
 	public Box<String> cgvCrawling(){
 		return crawler.cgvChoose();
 	}

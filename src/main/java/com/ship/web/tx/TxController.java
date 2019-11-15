@@ -28,9 +28,10 @@ public class TxController {
 	@Autowired Trunk<Box<String>> trunk;
 	@Autowired CrawlingProxy crawler;
 	@Autowired Box<String> box;
-	
+	//dd
 	@GetMapping("/cgvcrawling")
-	public Box bringCgv(){
-		return txService.cgvCrawling();
+	public Map<?,?> bringCgv(){
+		trunk.put(Arrays.asList("list"),Arrays.asList(txService.cgvCrawling()));
+		return trunk.get();
 	}
 }

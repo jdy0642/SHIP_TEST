@@ -19,7 +19,7 @@ public class CrawlingProxy extends Proxy {
 	@Autowired Printer p;
 	public Box<String> cgvChoose(){
 	      return cgvCrawling(Path.CRAWLING_CGV.toString()+3);
-	   }
+	   }//dd
 	private Box<String> cgvCrawling(String url) {
 		p.accept("\n url: "+url);
 		box.clear();
