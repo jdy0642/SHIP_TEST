@@ -162,8 +162,7 @@ auth_vue ={
         '      <li class="col-12 col-md-6 col-lg-3">'+
         '          <div class="cnt-block equal-hight" style="height: 349px;">'+
         '            <figure><img src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Bugs%21_logo.jpg" class="img-responsive" alt=""></figure>'+
-        '            <h3><div id="bugs" class="wrap">'+
-        '			</div></h3>'+
+        '            <h3><div class="wrap"><id="bugs" class="button">벅스크롤링</button></div></h3>'+
         '          </div>'+
         '      </li>'+
         '      <li class="col-12 col-md-6 col-lg-3">'+
