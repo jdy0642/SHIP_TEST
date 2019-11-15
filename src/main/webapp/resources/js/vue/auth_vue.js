@@ -162,25 +162,25 @@ auth_vue ={
         '      <li class="col-12 col-md-6 col-lg-3">'+
         '          <div class="cnt-block equal-hight" style="height: 349px;">'+
         '            <figure><img src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Bugs%21_logo.jpg" class="img-responsive" alt=""></figure>'+
-        '            <h3><div class="wrap"><id="bugs" class="button">벅스크롤링</button></div></h3>'+
+        '            <h3><a class="wrap" id="bugs" href="#"></a>'+
         '          </div>'+
         '      </li>'+
         '      <li class="col-12 col-md-6 col-lg-3">'+
         '          <div class="cnt-block equal-hight" style="height: 349px;">'+
         '            <figure><img src="https://upload.wikimedia.org/wikipedia/ko/3/32/CJ_CGV_logo.jpg" class="img-responsive" alt=""></figure>'+
-        '            <h3><a id="cgv" href="#"></a></h3>'+
+        '            <h3><a class="wrap" id="cgv" href="#"></a></h3>'+
         '          </div>'+
         '      </li>'+
         '      <li class="col-12 col-md-6 col-lg-3">'+
         '          <div class="cnt-block equal-hight" style="height: 349px;">'+
         '            <figure><img src="https://ssl.pstatic.net/dicimg/alldic/newImg/enkodict.png" class="img-responsive" alt=""></figure>'+
-        '            <h3><a id="eng" href="#"></a></h3>'+
+        '            <h3><a  class="wrap" id="eng" href="#"></a></h3>'+
         '          </div>'+
         '       </li>'+
         '      <li class="col-12 col-md-6 col-lg-3">'+
         '          <div class="cnt-block equal-hight" style="height: 349px;">'+
         '            <figure><img src="http://indz.co.kr/wp-content/uploads/2016/09/coming-soon.jpg" class="img-responsive" alt=""></figure>'+
-        '            <h3><a id="ready" href="http://www.webcoderskull.com/"></a></h3>'+
+        '            <h3><a  class="wrap" id="ready" href="http://www.webcoderskull.com/"></a></h3>'+
         '          </div>'+
         '      </li>'+
         '    </ul>'+

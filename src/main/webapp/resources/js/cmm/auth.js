@@ -32,7 +32,7 @@ auth = (()=>{
     let bugs =()=>{
         $('<button>',{
             type : "submit",
-            text : "벅스크롤링",
+            text : "BUGS CRAWL",
             click : e=>{
                 e.preventDefault()
                 alert('벅스 크롤링!')
@@ -46,7 +46,7 @@ auth = (()=>{
                 })
                     
             }
-        }).appendTo('#bugs')
+        }).addClass("button").appendTo('#bugs')
         
         
     }
@@ -63,7 +63,7 @@ auth = (()=>{
                 })
                 
             }
-        }).appendTo('#cgv')
+        }).addClass("button").appendTo('#cgv')
     }
     let eng =()=>{
         $('<button>',{
@@ -77,7 +77,7 @@ auth = (()=>{
                     engcrawl()
             
             }
-        }).appendTo('#eng')
+        }).addClass("button").appendTo('#eng')
     }
     let ready =()=>{
         $('<button>',{
@@ -88,7 +88,7 @@ auth = (()=>{
                 e.preventDefault()
                 
             }
-        }).appendTo('#ready')
+        }).addClass("button").appendTo('#ready')
     }
     let bugscrawl =d=>{
         $.each(d,(i,j)=>{
