@@ -1,7 +1,5 @@
 package com.ship.web.pxy;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Map;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
