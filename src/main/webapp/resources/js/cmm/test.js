@@ -2,7 +2,6 @@
 var test = test || {}
 test = (()=>{
 	const WHEN_ERR = '호출하는 JS파일을 찾을 수 없습니다.';
-	var count;
 	let _,js,css,img,brd_vue_js,router_js,navi_js,navi_vue_js,page_vue_js,compo_vue_js;
 	let init =()=>{
 		  _=$.ctx()
@@ -33,6 +32,7 @@ test = (()=>{
 	let setContentView=()=>{
 			$('head').html(brd_vue.brd_head({css:$.css(), img: $.img()}))
 			$('body').html(brd_vue.brd_body({css:$.css(), img: $.img()})).addClass('bg-light')
+			let listcount
 			$('<button class="btn btn-secondary my-2 my-sm-0" type="submit">cgv crawl</button>')
 		      .appendTo('body')
 		      .click(e=>{
@@ -40,10 +40,11 @@ test = (()=>{
 		         $.getJSON(_+'/tx/cgvcrawling',d=>{
 		        	 $.each(d.list,(i,j)=>{
 		        		 $('#testarea').append(j)
-		        		 count = i
+		        		 alert(i)
+		        		 listcount = i
 		        	 })
 		         	})
-		         	alert(count)
+		         	alert('i = '+listcount)
 		         })
 			$(navi_vue.navi()).appendTo('#navi')
 			//recent_updates({page: '1', size:'5'})
