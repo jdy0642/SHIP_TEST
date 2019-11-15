@@ -1,6 +1,9 @@
 package com.ship.web.pxy;
 
+<<<<<<< HEAD
 import java.io.File;
+=======
+>>>>>>> ljs
 import java.util.ArrayList;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Component;

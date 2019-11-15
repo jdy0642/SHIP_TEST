@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 "use strict";
 var app = app || {};
 app = (()=>{
@@ -7,12 +8,24 @@ app = (()=>{
 			()=>{$.extend(new Session(x));
 			onCreate()
 			});
+=======
+"use strict"
+var app = app || {}
+app = (()=>{
+	const WHEN_ERR='호출하는 js 파일을 찾을 수 없습니다.'
+	let _,js,css,img,authjs
+	let run =x=> $.getScript(x+'/resources/js/cmm/router.js',
+			()=>{$.extend(new Session(x))
+			onCreate()
+			})
+>>>>>>> ljs
 		
 	let init =()=>{
 		_ =$.ctx()
 		js = $.js()
 		css = $.css()
 		img = $.img()
+<<<<<<< HEAD
 		testjs = js+'/cmm/test.js'
 		
 	}
@@ -23,6 +36,19 @@ app = (()=>{
 		)
 		.done(()=>{
 			test.onCreate()
+=======
+		authjs = js+'/cmm/auth.js'
+		
+	}
+	let onCreate =()=>{
+		init()
+		$.when(
+			$.getScript(authjs)
+			
+		)
+		.done(()=>{
+			auth.onCreate()
+>>>>>>> ljs
 			
 		}
 		)
@@ -30,7 +56,13 @@ app = (()=>{
 			alert(WHEN_ERR)	
 		}
 		)
+<<<<<<< HEAD
 	};
 	return {run};
 })();
+=======
+	}
+	return {run}
+})()
+>>>>>>> ljs
 
