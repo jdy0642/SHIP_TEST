@@ -48,7 +48,5 @@ public class Proxy {
 		BiFunction<File,String, File> f = File::new;
 		return f.apply(t, u);
 	}
-	
-	
 
 }

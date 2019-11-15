@@ -15,28 +15,22 @@ import com.ship.web.enums.Path;
 public class CrawlingProxy extends Proxy {
 	@Autowired Box<String> box;
 	
-	  public Box<String> choose(Map<?,?> paramMap){
-		  String url = "";
-		  switch (string(paramMap.get("srch"))) {
-		case "인기글":
-			for(int i =1; i<5; i++) {
-				box = crawling(Path.CRAWLING_TARGET.toString()+i);
-			}
-			break;
-		default:
-				box = crawling("http://"+paramMap.get("site")+"/");
-			break;
-		}
-	      return box;
+	  public Box<String> engChoose(Map<?,?> paramMap){
+		 
+//		  System.out.println("박스 choose"+box);
+	      return engCrawling("https://endic.naver.com/?sLn=kr");
 	   }
-	private Box<String> crawling(String url) {
+	private Box<String> engCrawling(String url) {
 		box.clear();
 	      try {
 	    	  Document rawData = Jsoup.connect(url).timeout(10*1000).get();
-	    	  	Elements artist = rawData.select("div[class=\"article-list-item__title\"] span");
-	    	  	for(Element e : artist) {
-	    	  		box.add(e.text()+"\n ***************\n");
+	    	  	Elements artist = rawData.select("a[class=\"link\"] strong");
+	    	  	Elements artist1 = rawData.select("a[class=\"link\"]");
+	    	  	for(Element e : artist1) {
+	    	  		box.add(e.text()+"\n");
+	    	  		
 	    	  	}
+	    	  	System.out.println("box에 담긴: "+box);
 	      } catch (Exception e) {
 	         e.printStackTrace();
 	      }

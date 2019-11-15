@@ -13,7 +13,7 @@ public class TxService {
 	@Autowired CrawlingProxy crawler;
 	@Autowired Box<String> box;
 	
-	public Box<String> crawling(Map<?,?> paramMap){
-		return crawler.choose(paramMap);
+	public Box<String> engCrawling(Map<?,?> paramMap){
+		return crawler.engChoose(paramMap);
 	}
 }

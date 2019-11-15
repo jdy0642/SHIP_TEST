@@ -1,10 +1,10 @@
 package com.ship.web.pxy;
 import java.util.HashMap;
 import java.util.List;
+import java.util.function.Function;
 
 import org.springframework.stereotype.Component;
 
-import com.ship.web.cmm.IFunction;
 
 @Component
 public class Trunk<T>{
@@ -17,7 +17,7 @@ public class Trunk<T>{
 		map.forEach((k,v)-> System.out.print(String.format("%s : %s", k,v)));
 	}
 	public T get(String k) {
-		IFunction<String, T> f = p -> map.get(p);
+		Function<String, T> f = p -> map.get(p);
 		return f.apply(k);
 		}
 	public HashMap<String, T> get() {return map;}
