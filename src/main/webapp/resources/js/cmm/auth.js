@@ -46,7 +46,7 @@ auth = (()=>{
                 })
                     
             }
-        }).appendTo('#bugs')
+        }).addClass(button).appendTo('#bugs')
         
         
     }
